@@ -1,0 +1,416 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Agrandir;
+  }
+  
+  .panel {
+    padding:100px 200px 100px 200px;
+    /* scroll-snap-align: start; */
+    min-height: 100vh;
+    height: auto;
+  }
+
+  
+  .blue {
+    background-color: #0212eb;
+    background-image: none;
+  }
+  .red {
+    background-color: #cf3535;
+    background-image: none;
+  }
+  .black {
+    background-color: #202020;
+    background-image: none;
+  }
+  .purple {
+    background-color: purple;
+    background-image: none;
+  }
+  .red {
+    background-color: red;
+    background-image: none;
+  }
+  
+
+.pined{
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  padding-inline: 3%;
+  padding-top: 3%;
+  display: flex;
+}
+
+.pined .left{
+  width: 25%;
+}
+
+.pined .left #logo{
+  width:90px;
+}
+
+.pined .left .menu{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(-180deg);
+}
+.pined .left .menu p{
+  margin-top: 60px;
+  opacity:0.36;
+  font-size: 1rem;
+  color: white;
+}
+.vertical-text{
+  writing-mode: vertical-lr;
+}
+
+.pined .left #copyright{
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-size: 1rem;
+  display: flex;
+  align-items: baseline;
+}
+
+.pined .left #copyright lottie-player{
+  transform: translateY(10px);
+}
+.pined .middle{
+  width:50%
+}
+
+.pined .middle h3{
+  font-size: 200px;
+  color: white;
+  opacity: .16;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  margin: auto;
+}
+
+.pined .right{
+  width:25%;
+}
+
+.pined .right #contacter{
+  font-size: 1rem;
+  color:white;
+  width: fit-content;
+  margin-left: auto;
+  transition: transform 1s cubic-bezier(.16,1.08,.38,.98);
+  background: linear-gradient(currentColor 0 0) 
+    bottom right/
+    var(--underline-width, 0%) 0.15em
+    no-repeat;
+  color: #fff;
+  display: inline-block;
+  padding: 0 0 0.2em;
+  text-decoration: none;
+  transition: background-size 0.5s;
+  float: right;
+}
+
+.pined .right #contacter:hover{
+  --underline-width: 100%;
+}
+
+
+.panel.blue{
+  font-size: 2.5rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.back-text{
+  color: white;
+  font-size: 200px;
+  margin-top: -100px;
+  z-index: -1;
+  top: 300px;
+  position: sticky;
+  opacity: 0.1;
+
+}
+#le-digital{
+  margin-top: -200px;
+}
+.panel.blue.column{
+  flex-direction: column;
+  font-size: 1.4rem;
+  text-align: left;
+}
+
+.panel.blue .slogan{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.panel.blue .column{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  text-align: left;
+  padding-inline: 10%;
+}
+.panel.blue .slogan .crown{
+  position: absolute;
+  right: 150px;
+  margin-top: -350px;
+  transform: rotate(45deg);
+}
+.panel.blue .slogan .cable{
+  position: absolute;
+  right: 180px;
+  margin-top: 300px;
+}
+
+.panel.blue .column{
+  padding-inline: 20%;
+  font-size: 1.2rem;
+}
+.panel.blue .column .d-flex{
+  padding-top: 50px;
+}
+.panel.blue .column .projet{
+  width: 50%;
+}
+.panel.blue .column .projet strong{
+  font-size: 100px;
+  color: transparent;
+  -webkit-text-stroke: #fff;
+  -webkit-text-stroke-width: 2px;
+}
+
+.panel.blue .column .expertise{
+  padding-left: 100px;
+}
+
+.panel.blue .column .efficacite{
+  width: 60%;
+
+}
+
+.panel.blue .column .efficacite p{
+  text-align: left;
+
+}
+
+.panel.blue .efficacite h2{
+  font-size: 90px;
+  color: transparent;
+  -webkit-text-stroke: #fff;
+  -webkit-text-stroke-width: 2px;
+  line-height: 20px;
+  margin-top: 70px;
+  
+}
+
+.panel.blue .efficacite{
+  width: 60%;
+  padding-right: 100px;
+}
+
+.panel.blue .pedagogie{
+  width: 50%;
+  transform: translateX(90px);
+}
+.panel.blue .pedagogie p{
+  text-align: left;
+  padding-right: 50px;
+}
+
+.panel.blue .pedagogie h2{
+  font-size: 90px;
+  color: transparent;
+  -webkit-text-stroke: #fff;
+  -webkit-text-stroke-width: 2px;
+  line-height: 20px;
+  margin-top: 70px;
+  
+}
+
+section#project h2{
+  margin-top: -100px;
+  padding-top: 150px;
+  padding-left: 100px;
+  font-size: 200px;
+  position: sticky;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  color: white;
+  opacity: .1;
+  font-weight: 900;
+}
+
+.cluster.clusterGreat{
+  margin-bottom: 100px;
+}
+
+.clusterPieces.caption {
+  position: relative;
+  width: 100px;
+  font-size: 100px;
+  color: white;
+  z-index: 2;
+  top: 0;
+  margin-left: 100px;
+}
+
+.clusterPieces.container {
+  width: 650px;
+  height: 500px;
+  overflow: hidden;
+  padding: 0!important;
+}
+
+.container.clusterPieces img{
+  margin: 0!important;
+  height: 800px;
+  transform: translateY(-100px);
+}
+
+.cluster .inv{
+  color: white;
+  position: absolute;
+  width: 880px;
+  height: 500px;
+  z-index:2;
+  padding-left: 100px;
+  /* background-color: red; */
+}
+
+.inv h4{
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+.inv p{
+  font-size: 1.2rem;
+  width: 450px;
+}
+
+#reference{
+}
+
+.dark-black{
+  background-color: #0f0e0e;
+}
+
+.panel.dark-black h2{
+  top: 40vh;
+  margin: auto;
+  position: sticky;
+  color: white;
+  font-size: 200px;
+  z-index: -1;
+  opacity: .1;
+}
+
+.ligne{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-basis: 2;
+  margin: 100vh 0 100vh 0;
+  padding-inline: 200px;
+}
+
+.colonne{
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.colonne img{
+  width: 100px;
+  height: 100px;
+  opacity: 0.4;
+}
+
+#contact{
+  height: 100vh;
+}
+#contact h2{
+  font-size: 200px;
+  opacity: .1;
+}
+
+#contact .content{
+  position: absolute;
+  top:0;
+  height: 100vh;
+}
+
+#contact .content #mail{
+  font-size:4rem;
+  color: white;
+}
+
+#contact .content #mail:hover{
+  --underline-width: 100%;
+}
+
+.btn-dark{
+  border-radius: 40px;
+  border: none;
+  font-size: 1.5rem;
+  padding:17px 40px 17px 40px;
+  transform: translateY(-75px);
+}
+
+#contact .content #mail{
+  margin-top: 42%;
+  transform: translateY(-50%);
+  /* margin-top: 250px; */
+}
+#contact .content .row{
+  margin-top: 75px;
+  font-family: sans-serif;
+  font-size: 1rem;
+  padding-left: 125px;
+}
+
+
+#contact .content .row div p{
+  text-align: left;
+  line-height: 15px;
+}
+
+#contact .content .row div p.titre{
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+#contact .content .row div .circle{
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #1c2aed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-linkedin-in{
+  font-size: 30px;
+}
